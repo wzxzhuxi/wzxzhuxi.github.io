@@ -416,7 +416,6 @@ const App = (function() {
             'from <a href="#/collection/' + escapeHtml(collection.slug) + '">' + escapeHtml(collection.title) + '</a>' +
           '</div>' +
         '</header>' +
-        navHtml +
         '<div id="chapter-body" class="chapter-content__body">' +
           '<div class="loading-state">' +
             '<div class="loading-state__spinner"></div>' +
