@@ -12,10 +12,24 @@
 
 window.DataProjects = [
   {
-    name: 'Example Project',
-    description: 'Replace this with your own project',
-    repo: 'example-repo',
-    language: 'JavaScript',
-    tags: ['example']
+    name: 'Spoon-Knife',
+    description: 'This repo is for demonstration purposes only.',
+    repo: 'Spoon-Knife',
+    language: 'HTML',
+    tags: ['demo', 'fork-me']
+  },
+  {
+    name: 'Hello-World',
+    description: 'My first repository on GitHub!',
+    repo: 'Hello-World',
+    language: 'Markdown',
+    tags: ['demo', 'hello-world']
+  },
+  {
+    name: 'git-consortium',
+    description: 'This repo is for demonstration purposes.',
+    repo: 'git-consortium',
+    language: 'Ruby',
+    tags: ['demo']
   }
 ];

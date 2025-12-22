@@ -28,14 +28,22 @@
 
 window.DataCollections = [
   {
-    slug: 'example-tutorial',
-    title: 'Example Tutorial Series',
-    description: 'Replace this with your own tutorial collection',
+    slug: 'github-demo-series',
+    title: 'GitHub Demo Series',
+    description: 'A collection of demo content from GitHub official examples.',
     date: '2025-01-01',
-    tags: ['tutorial', 'example'],
+    tags: ['demo', 'github'],
     chapters: [
-      { number: 1, title: 'Introduction', repo: 'example-repo' },
-      { number: 2, title: 'Getting Started', repo: 'example-repo', path: 'docs/start.md' }
+      {
+        number: 1,
+        title: 'Spoon-Knife Introduction',
+        url: 'https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md'
+      },
+      {
+        number: 2,
+        title: 'Hello World',
+        url: 'https://raw.githubusercontent.com/octocat/Hello-World/master/README'
+      }
     ]
   }
 ];

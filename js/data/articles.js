@@ -29,8 +29,17 @@ window.DataArticles = [
     title: 'Getting Started with This Blog',
     date: '2025-01-01',
     summary: 'A quick guide to setting up your own blog using this template.',
-    repo: 'blog',
-    path: 'README.md',
+    // Using octocat's Spoon-Knife repo - a famous GitHub demo repo
+    url: 'https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md',
     tags: ['tutorial', 'getting-started']
+  },
+  {
+    slug: 'hello-world',
+    title: 'Hello World Example',
+    date: '2025-01-02',
+    summary: 'A simple hello world article demonstrating the blog template.',
+    // Using octocat's Hello-World repo
+    url: 'https://raw.githubusercontent.com/octocat/Hello-World/master/README',
+    tags: ['demo', 'hello-world']
   }
 ];
