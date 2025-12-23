@@ -5,54 +5,39 @@
  * URLs are automatically generated based on the format used.
  *
  * Supported Formats:
- *
- *   Format 1: Own repo README (simplest)
+ *   Format 1: Own repo README
  *   { slug: 'my-project', repo: 'my-project', title: '...', ... }
  *
- *   Format 2: Own repo with custom path (supports subdirectories)
+ *   Format 2: Own repo with custom path
  *   { slug: 'my-article', repo: 'my-repo', path: 'docs/article.md', title: '...', ... }
  *
- *   Format 3: Direct URL (any external source)
+ *   Format 3: Direct URL
  *   { slug: 'external', url: 'https://raw.githubusercontent.com/...', title: '...', ... }
- *
- *   Format 4: External repo (structured)
- *   {
- *     slug: 'external-article',
- *     external: { username: 'other-user', repo: 'other-repo', branch: 'main', path: 'file.md' },
- *     title: '...', ...
- *   }
  */
 
 window.DataArticles = [
-  // ============================================
-  // TEST CASES - Verify bug fix works
-  // ============================================
   {
-    slug: 'test-invalid-url',
-    title: '[TEST] Invalid URL - Should Show Error',
-    date: '2025-12-22',
-    summary: 'This article has an invalid URL (#). Should display error, not render HTML.',
-    url: '#',
-    tags: ['test', 'bug-fix']
+    slug: 'rknn-yolo-deploy',
+    title: 'RKNN-3588 NPU 部署 YOLOv5',
+    date: '2024-12-01',
+    summary: '在 RK3588 开发板上部署 YOLOv5，使用线程池实现 NPU 推理加速',
+    repo: 'rknn-3588-npu-yolo-accelerate',
+    tags: ['RKNN', 'YOLOv5', 'NPU', '深度学习']
   },
   {
-    slug: 'test-html-response',
-    title: '[TEST] HTML Response - Should Show Error',
-    date: '2025-12-22',
-    summary: 'This URL returns HTML page. Should display error, not render the HTML.',
-    url: 'https://github.com/octocat/Spoon-Knife',
-    tags: ['test', 'bug-fix']
+    slug: 'rust-thread-pool',
+    title: 'Rust 动态线程池实现',
+    date: '2024-11-01',
+    summary: '用 Rust 从零实现一个简单的动态线程池',
+    repo: 'Rust-dynamic-thread-pool',
+    tags: ['Rust', '并发', '线程池']
   },
-  // ============================================
-  // Real Articles
-  // ============================================
   {
-    slug: 'getting-started',
-    title: '博客入门指南',
-    date: '2025-12-23',
-    summary: '从零开始搭建你的 ProArt 风格博客，包含配置、部署和自定义指南。',
-    // 使用本地 README.md
-    url: './README.md',
-    tags: ['教程', '入门', '配置']
+    slug: 'charlie-db',
+    title: 'CharlieDB 时序数据库',
+    date: '2024-10-01',
+    summary: '参考 DDIA 用 Rust 从零构建简单时序数据库',
+    repo: 'CharlieDB',
+    tags: ['Rust', '数据库', 'TSDB']
   }
 ];

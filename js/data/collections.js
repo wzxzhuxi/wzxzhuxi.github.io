@@ -2,47 +2,63 @@
  * ProArt Blog - Collections Data
  *
  * Book/tutorial collections with chapters.
- * Each collection contains multiple chapters loaded from external markdown.
- *
- * Collection Format:
- *   author: 'Name'             - Optional, defaults to config.personal.name
- *
- * Chapter Formats (same as articles):
- *
- *   Format 1: Own repo README
- *   { number: 1, title: 'Chapter 1', repo: 'my-repo' }
- *
- *   Format 2: Own repo with custom path (supports subdirectories)
- *   { number: 2, title: 'Chapter 2', repo: 'my-repo', path: '02-chapter/README.md' }
- *
- *   Format 3: Direct URL
- *   { number: 3, title: 'Chapter 3', url: 'https://raw.githubusercontent.com/...' }
- *
- *   Format 4: External repo (structured)
- *   {
- *     number: 4,
- *     title: 'Chapter 4',
- *     external: { username: 'other-user', repo: 'other-repo', branch: 'main', path: 'chapter.md' }
- *   }
  */
 
 window.DataCollections = [
   {
-    slug: 'github-demo-series',
-    title: 'GitHub Demo Series',
-    description: 'A collection of demo content from GitHub official examples.',
+    slug: 'cpp-functional-programming',
+    title: 'C++ 函数式编程教程',
+    description: '从基础到进阶的 C++ 函数式编程完整教程，涵盖纯函数、高阶函数、Monad 等核心概念',
     date: '2025-01-01',
-    tags: ['demo', 'github'],
+    tags: ['C++', '函数式编程', '教程'],
     chapters: [
       {
         number: 1,
-        title: 'Spoon-Knife Introduction',
-        url: 'https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md'
+        title: '基础概念',
+        repo: 'cpp-functional-programming',
+        path: '01-basics/README.md'
       },
       {
         number: 2,
-        title: 'Hello World',
-        url: 'https://raw.githubusercontent.com/octocat/Hello-World/master/README'
+        title: '不可变性',
+        repo: 'cpp-functional-programming',
+        path: '02-immutability/README.md'
+      },
+      {
+        number: 3,
+        title: '纯函数',
+        repo: 'cpp-functional-programming',
+        path: '03-pure-functions/README.md'
+      },
+      {
+        number: 4,
+        title: '高阶函数',
+        repo: 'cpp-functional-programming',
+        path: '04-higher-order-functions/README.md'
+      },
+      {
+        number: 5,
+        title: '函数组合',
+        repo: 'cpp-functional-programming',
+        path: '05-functional-composition/README.md'
+      },
+      {
+        number: 6,
+        title: '代数数据类型',
+        repo: 'cpp-functional-programming',
+        path: '06-algebraic-types/README.md'
+      },
+      {
+        number: 7,
+        title: 'Monad',
+        repo: 'cpp-functional-programming',
+        path: '07-monads/README.md'
+      },
+      {
+        number: 8,
+        title: '高级模式',
+        repo: 'cpp-functional-programming',
+        path: '08-advanced-patterns/README.md'
       }
     ]
   }

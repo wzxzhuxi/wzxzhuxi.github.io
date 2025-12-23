@@ -6,22 +6,19 @@
 
 window.DataDiaries = [
   {
-    id: '2025-01-01',
-    date: '2025-01-01',
-    mood: 'happy',
-    weather: 'sunny',
-    content: `Started my new blog today!
+    id: '2025-12-23',
+    date: '2025-12-23',
+    mood: 'productive',
+    weather: 'cloudy',
+    content: `新博客上线了！
 
-This is an example diary entry. Replace it with your own.
+使用 ProArt 设计风格搭建的个人博客，主要记录：
 
-Key features of the diary module:
+- [+] Rust / C++ 学习笔记
+- [+] 函数式编程实践
+- [+] 嵌入式开发经验
+- [+] 数据库原理探索`,
 
-- [+] Mood and weather indicators
-- [+] Tag-based organization
-- [+] Clean, minimal design
-- [+] Markdown-like formatting
-
-Feel free to customize this template.`,
-    tags: ['blog', 'start']
+    tags: ['blog', '开始']
   }
 ];

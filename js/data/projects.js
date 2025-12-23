@@ -4,32 +4,56 @@
  * GitHub project entries with repo names.
  * URLs are automatically generated from repo + github_username in config.
  * Star counts are fetched dynamically from GitHub API.
- *
- * Format:
- *   repo: 'repository-name'    - GitHub repo name (URL auto-generated)
- *   url: 'https://...'         - Optional, override auto-generated URL
  */
 
 window.DataProjects = [
   {
-    name: 'Spoon-Knife',
-    description: 'This repo is for demonstration purposes only.',
-    repo: 'Spoon-Knife',
-    language: 'HTML',
-    tags: ['demo', 'fork-me']
+    name: 'RKNN-3588 NPU YOLO',
+    description: '在 RKNN-3588 上部署 YOLOv5，使用线程池实现 NPU 推理加速',
+    repo: 'rknn-3588-npu-yolo-accelerate',
+    language: 'C++',
+    tags: ['rknn3588', 'yolov5', 'npu', 'deep-learning']
   },
   {
-    name: 'Hello-World',
-    description: 'My first repository on GitHub!',
-    repo: 'Hello-World',
-    language: 'Markdown',
-    tags: ['demo', 'hello-world']
+    name: 'C++ 函数式编程教程',
+    description: 'C++ 函数式编程教程，涵盖纯函数、高阶函数、模板元编程等内容',
+    repo: 'cpp-functional-programming',
+    language: 'C++',
+    tags: ['cpp', 'functional-programming', 'tutorial']
   },
   {
-    name: 'git-consortium',
-    description: 'This repo is for demonstration purposes.',
-    repo: 'git-consortium',
-    language: 'Ruby',
-    tags: ['demo']
+    name: 'Rust 动态线程池',
+    description: '一个用 Rust 编写的简单动态线程池',
+    repo: 'Rust-dynamic-thread-pool',
+    language: 'Rust',
+    tags: ['rust', 'thread-pool', 'concurrency']
+  },
+  {
+    name: 'CharlieDB',
+    description: '用 Rust 从零构建的简单时序数据库，参考《数据密集型应用系统设计》',
+    repo: 'CharlieDB',
+    language: 'Rust',
+    tags: ['rust', 'database', 'tsdb', 'ddia']
+  },
+  {
+    name: 'Pool Factory',
+    description: '函数式编程工厂模式实践，使用纯函数实现通用池化技术',
+    repo: 'pool-factory',
+    language: 'C++',
+    tags: ['cpp', 'functional', 'design-pattern']
+  },
+  {
+    name: 'Lambda Waybar',
+    description: '个人自用 Waybar 配置，Lambda 风格 + Gruvbox Dark 配色',
+    repo: 'lambda_waybar',
+    language: 'Shell',
+    tags: ['hyprland', 'waybar', 'dotfiles']
+  },
+  {
+    name: 'FP C++ Init',
+    description: '现代 C++ 跨平台项目脚手架，函数式架构设计',
+    repo: 'fp-cpp-init',
+    language: 'C++',
+    tags: ['cpp', 'scaffold', 'cmake']
   }
 ];
