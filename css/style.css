@@ -67,6 +67,45 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* ProArt scrollbar - Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-gold-dim) var(--bg-primary);
+}
+
+/* ProArt scrollbar - Global */
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--accent-gold-dim);
+  border-radius: 1px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+*::-webkit-scrollbar-corner {
+  background: var(--bg-primary);
+}
+
+*::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+*::-webkit-scrollbar-button:start,
+*::-webkit-scrollbar-button:end,
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button:decrement {
+  display: none !important;
 }
 
 body {

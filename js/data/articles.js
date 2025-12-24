@@ -39,5 +39,14 @@ window.DataArticles = [
     summary: '参考 DDIA 用 Rust 从零构建简单时序数据库',
     repo: 'CharlieDB',
     tags: ['Rust', '数据库', 'TSDB']
+  },
+  {
+    slug: 'pool-factory-tutorial',
+    title: '通用资源池设计与实现',
+    date: '2025-01-01',
+    summary: '函数式编程工厂模式实践，使用纯函数实现通用池化技术',
+    repo: 'pool-factory',
+    path: 'docs/tutorial.md',
+    tags: ['C++', '函数式编程', '设计模式', '资源池']
   }
 ];
